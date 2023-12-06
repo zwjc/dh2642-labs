@@ -1,0 +1,211 @@
+/* A debug class, used to separate components graphically during development */
+.debug {
+    border-style: solid;
+}
+
+html, div {
+    width: 100%;
+}
+
+.flexParent {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    gap: 10px;
+}
+
+.sidebar {
+    width: 380px;
+    border-style: solid;
+}
+
+@media screen and (max-width: 850px) {
+    .flexParent {
+        display:list-item;
+        width: 100%;
+        margin: 10px;
+        gap: 10px;
+    }
+    .sidebar {
+        width: 100%;
+        border-style: solid;
+    }
+
+}
+.mainContent {
+    border-style: solid;
+    flex-wrap: wrap;
+}
+
+.summary {
+    align-items: center;
+    border-bottom: solid;
+}
+
+.searchForm {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    margin: 10px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 10px;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+.wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+}
+
+.text {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.text:hover{
+    color: #555;
+}
+
+.textaligncenter {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.numberalign {
+    text-align: right;
+    font-size: 1rem;
+    margin: 5px 0;
+
+}
+
+.dish {
+    text-align: center;
+    display: grid;
+    width: 80px;
+    vertical-align: baseline;
+}
+
+.textBox {
+    align-self: center;
+    border: 2px solid rgba(54, 54, 54, 0.8);
+    max-width: 600px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.mp {
+    margin: 2px;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.XButton {
+    align-self: center;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(217, 89, 89);
+    color: rgb(240, 231, 231);
+    border-radius: 3px;
+}
+
+.myButton {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    align-self: center;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.myButton:hover, .myButton:focus {
+    background-color: #0056b3;
+    outline: none;
+}
+
+.myButton:disabled {
+    background-color: #ccc;
+    color: #777;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.naviButton {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    align-self: center;
+    border: none;
+    background-color: #3cb33a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s ease;
+}
+.image {
+    display: block;
+    margin-left: 35px;
+    width: 50%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.end {
+    display: block;
+    margin-left: 0%;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dishItem {
+    align-items: center;
+    align-content: center;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dishItem:hover {
+    background-color: rgb(197, 190, 167);
+}
